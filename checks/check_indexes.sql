@@ -641,3 +641,5 @@ BEGIN
     DROP TABLE ci_indexes_warnings;
 END;
 $$;
+
+select * from check_indexes('public_star', 'ci_indexes', 'rows', 2);
